@@ -2,10 +2,10 @@ import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
-const vehicle = { model: 'ZEEKR 001', variant: 'Long Range AWD', year: 2025, battery: 78, range: 412, odometer: 12480, capacity: 100, colour: 'Phantom Black' };
+const vehicle = { model: 'ZEEKR 7X', variant: 'Long Range', market: 'Australia', year: 2025, battery: 78, range: 412, odometer: 12480, capacity: 100, colour: 'Phantom Black' };
 
 export default function App() {
-  const details = [ ['Model year', String(vehicle.year)], ['Variant', vehicle.variant], ['Odometer', `${vehicle.odometer.toLocaleString('en-AU')} km`], ['Battery capacity', `${vehicle.capacity} kWh`], ['Exterior', vehicle.colour] ];
+  const details = [ ['Market', vehicle.market], ['Model year', String(vehicle.year)], ['Variant', vehicle.variant], ['Odometer', `${vehicle.odometer.toLocaleString('en-AU')} km`], ['Battery capacity', `${vehicle.capacity} kWh`], ['Exterior', vehicle.colour] ];
   return (
     <View style={s.screen}>
       <StatusBar style="light" />
